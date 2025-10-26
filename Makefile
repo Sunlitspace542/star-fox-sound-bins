@@ -52,6 +52,7 @@ BIN_FILES := $(addsuffix .BIN, $(BUILD))
 # Default target
 all: setup $(BIN_FILES)
 
+# Check that build directory exists, and if not, create it
 setup:
 	@if not exist .\build\ mkdir build
 
