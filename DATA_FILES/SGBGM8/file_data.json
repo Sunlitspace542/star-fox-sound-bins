@@ -1,0 +1,6 @@
+{
+	"FILE_DATA": [
+		{"file_name": "SONG_TABL_00.BIN", "spc_addr": "0xfdc8", "type": "song_table"},
+		{"file_name": "SONG_DATA_00.BIN", "spc_addr": "0xec00", "type": "song_data"}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"FILE_DATA": [
+		{"file_name": "SMPL_TABL_00.BIN", "spc_addr": "0x3c00", "type": "sample_table"},
+		{"file_name": "SMPL_DATA_00.BIN", "spc_addr": "0x4000", "type": "sample_data"},
+		{"file_name": "INST_PRMS_00.BIN", "spc_addr": "0x3d00", "type": "instrument_params"},
+		{"file_name": "SONG_TABL_00.BIN", "spc_addr": "0xfdde", "type": "song_table"},
+		{"file_name": "SONG_DATA_00.BIN", "spc_addr": "0xf7ab", "type": "song_data"}
+	]
+}

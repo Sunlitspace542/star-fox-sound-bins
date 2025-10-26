@@ -1,0 +1,6 @@
+{
+	"FILE_DATA": [
+		{"file_name": "SMPL_TABL_00.BIN", "spc_addr": "0x3ca0", "type": "sample_table"},
+		{"file_name": "SMPL_DATA_00.BIN", "spc_addr": "0xdba0", "type": "sample_data"}
+	]
+}
