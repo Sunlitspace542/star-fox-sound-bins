@@ -1,7 +1,0 @@
-{
-	"FILE_DATA": [
-		{"file_name": "PROG_CODE_00.BIN", "spc_addr": "0x3ee8", "type": "program_code"},
-		{"file_name": "PROG_CODE_01.BIN", "spc_addr": "0x0400", "type": "program_code"},
-		{"file_name": "PROG_CODE_02.BIN", "spc_addr": "0x3e20", "type": "program_code"}
-	]
-}

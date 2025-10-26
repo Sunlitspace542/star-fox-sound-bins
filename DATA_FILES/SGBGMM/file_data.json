@@ -1,7 +1,0 @@
-{
-	"FILE_DATA": [
-		{"file_name": "INST_PRMS_00.BIN", "spc_addr": "0x3d00", "type": "instrument_params"},
-		{"file_name": "SONG_DATA_00.BIN", "spc_addr": "0xe000", "type": "song_data"},
-		{"file_name": "SONG_TABL_00.BIN", "spc_addr": "0xfde2", "type": "song_table"}
-	]
-}
