@@ -44,6 +44,7 @@ BUILD_FILES := \
     SGSOUNDA
 
 # Change $(BUILD_FILES) to the name(s) of the BIN(s) you want to build, if not all of them.
+# e.g. BUILD ?= SGSOUND1 SGSOUND2 SGSOUND3
 BUILD ?= $(BUILD_FILES)
 
 # Output BIN files
