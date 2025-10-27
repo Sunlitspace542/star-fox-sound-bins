@@ -59,7 +59,7 @@ dw !BASE_ADDR								; spc destination
 
 
 INST_PRMS_00_start:
-
+;	VxSRCN, VxADSR1, VxADSR2, VxGAIN, pitch mult base, pitch mult fractional (256ths)
 	db $00, $FF, $E0, $B8, $07, $A0	; $00
 	db $01, $FD, $E0, $B8, $07, $A0	; $01
 	db $02, $FF, $E0, $B8, $07, $A0	; $02
