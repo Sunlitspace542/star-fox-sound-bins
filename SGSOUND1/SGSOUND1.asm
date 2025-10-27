@@ -1,10 +1,10 @@
+; Asar 1.91
+norom
+
 incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
 
-; Asar 1.91
-norom
 org $0000
-
 ; ===========================================
 !BASE_ADDR = $3C00
 dw SMPL_TABL_00_end-SMPL_TABL_00_start		; calculate size in bytes
@@ -17,26 +17,26 @@ SMPL_TABL_00_start:
 	%SMPL_PTR(SMPL_01, $010E)				; 
 	%SMPL_PTR(SMPL_02, $0024)				; 
 	%SMPL_PTR(SMPL_03, $0024)				; 
-	%SMPL_PTR(SMPL_04, $0561)				; 
-	%SMPL_PTR(SMPL_05, $05C4)				; 
-	%SMPL_PTR(SMPL_06, $0BA3)				; 
-	%SMPL_PTR(SMPL_07, $0D92)				; 
+	%SMPL_PTR(SMPL_04, $0561)				; 04 laser blast
+	%SMPL_PTR(SMPL_05, $05C4)				; 05 bomb
+	%SMPL_PTR(SMPL_06, $0BA3)				; 06 laser
+	%SMPL_PTR(SMPL_07, $0D92)				; 07 crash
 	%SMPL_PTR(SMPL_08, $05C4)				; 
 	%SMPL_PTR(SMPL_09, $001B)				; 
 	%SMPL_PTR(SMPL_10, $002D)				; 
 	%SMPL_PTR(SMPL_11, $001B)				; 
-	%SMPL_PTR(SMPL_12, $0816)				; 
-	%SMPL_PTR(SMPL_13, $0213)				; 
-	%SMPL_PTR(SMPL_14, $07B3)				; 
-	%SMPL_PTR(SMPL_15, $0870)				; 
-	%SMPL_PTR(SMPL_16, $039F)				; 
-	%SMPL_PTR(SMPL_17, $0024)				; 
+	%SMPL_PTR(SMPL_12, $0816)				; 0C "incoming enemy"
+	%SMPL_PTR(SMPL_13, $0213)				; 0D "wing"
+	%SMPL_PTR(SMPL_14, $07B3)				; 0E "damage"
+	%SMPL_PTR(SMPL_15, $0870)				; 0F "twin blasters"
+	%SMPL_PTR(SMPL_16, $039F)				; 10 "shield"
+	%SMPL_PTR(SMPL_17, $0024)				; 11 Andross laugh
 	%SMPL_PTR(SMPL_18, $05A9)				; 
 	%SMPL_PTR(SMPL_19, $001B)				; 
-	%SMPL_PTR(SMPL_20, $0360)				; 
-	%SMPL_PTR(SMPL_20, $0360)				; 
-	%SMPL_PTR(SMPL_20, $0360)				; 
-	%SMPL_PTR(SMPL_21, $01B0)				; 
+	%SMPL_PTR(SMPL_20, $0360)				; 14 Crystal
+	%SMPL_PTR(SMPL_20, $0360)				; 15 Crystal
+	%SMPL_PTR(SMPL_20, $0360)				; 16 Crystal
+	%SMPL_PTR(SMPL_21, $01B0)				; 17 comms static
 
 SMPL_TABL_00_end:
 ; ===========================================

@@ -1,8 +1,9 @@
+; Asar 1.91
+norom
+
 incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
 
-; Asar 1.91
-norom
 org $0000
 
 ; ===========================================
