@@ -59,7 +59,7 @@ setup:
 # Rule to build each BIN file
 %.BIN:
 	@echo Assembling $@
-	@if exist $*\$*.bin del $*\$*.bin
+	@if exist build\$*.bin del build\$*.bin
 	@cd $* && ..\asar.exe --no-title-check $*.asm ..\build\$@
 	@echo Assembled $@
 
