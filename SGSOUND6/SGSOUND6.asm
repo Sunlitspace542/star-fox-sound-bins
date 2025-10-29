@@ -14,7 +14,7 @@ dw !BASE_ADDR								; spc destination
 
 SMPL_TABL_00_start:
 
-	%SMPL_PTR(SMPL_00, $0EF1)				; 
+	%SMPL_PTR(SMPL_00, $0EF1)				; 28 "good luck"
 	%NULL_PTR()								; NULL
 	%NULL_PTR()								; NULL
 	%NULL_PTR()								; NULL

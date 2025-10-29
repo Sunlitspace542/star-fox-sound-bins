@@ -14,22 +14,22 @@ dw !BASE_ADDR								; spc destination
 
 SMPL_TABL_00_start:
 
-	%SMPL_PTR(SMPL_00, $001B)				; 
-	%SMPL_PTR(SMPL_01, $001B)				; 
-	%SMPL_PTR(SMPL_02, $0BA3)				; 
-	%SMPL_PTR(SMPL_03, $07AA)				; 
-	%SMPL_PTR(SMPL_04, $06A5)				; 
-	%SMPL_PTR(SMPL_04, $06A5)				; 
-	%SMPL_PTR(SMPL_04, $06A5)				; 
-	%SMPL_PTR(SMPL_04, $06A5)				; 
-	%SMPL_PTR(SMPL_05, $0414)				; 
-	%SMPL_PTR(SMPL_05, $0414)				; 
-	%SMPL_PTR(SMPL_05, $0414)				; 
-	%SMPL_PTR(SMPL_05, $0414)				; 
-	%SMPL_PTR(SMPL_05, $0414)				; 
-	%SMPL_PTR(SMPL_05, $0414)				; 
-	%SMPL_PTR(SMPL_06, $00B4)				; 
-	%SMPL_PTR(SMPL_07, $007E)				; 
+	%SMPL_PTR(SMPL_00, $001B)				; 18
+	%SMPL_PTR(SMPL_01, $001B)				; 19
+	%SMPL_PTR(SMPL_02, $0BA3)				; 1A
+	%SMPL_PTR(SMPL_03, $07AA)				; 1B
+	%SMPL_PTR(SMPL_04, $06A5)				; 1C
+	%SMPL_PTR(SMPL_04, $06A5)				; 1D
+	%SMPL_PTR(SMPL_04, $06A5)				; 1E
+	%SMPL_PTR(SMPL_04, $06A5)				; 1F
+	%SMPL_PTR(SMPL_05, $0414)				; 20
+	%SMPL_PTR(SMPL_05, $0414)				; 21
+	%SMPL_PTR(SMPL_05, $0414)				; 22
+	%SMPL_PTR(SMPL_05, $0414)				; 23
+	%SMPL_PTR(SMPL_05, $0414)				; 24
+	%SMPL_PTR(SMPL_05, $0414)				; 25
+	%SMPL_PTR(SMPL_06, $00B4)				; 26
+	%SMPL_PTR(SMPL_07, $007E)				; 27
 
 SMPL_TABL_00_end:
 ; ===========================================
