@@ -19,7 +19,7 @@ SMPL_TABL_00_start:
 	%SMPL_PTR(SMPL_03, $0024)				; 03
 	%SMPL_PTR(SMPL_04, $0561)				; 04 laser blast
 	%SMPL_PTR(SMPL_05, $05C4)				; 05 bomb
-	%SMPL_PTR(SMPL_06, $0BA3)				; 06 laser
+	%SMPL_PTR(SMPL_06, $0BA3)				; 06 player's laser
 	%SMPL_PTR(SMPL_07, $0D92)				; 07 crash
 	%SMPL_PTR(SMPL_08, $05C4)				; 08
 	%SMPL_PTR(SMPL_09, $001B)				; 09
