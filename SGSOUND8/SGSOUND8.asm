@@ -14,18 +14,18 @@ dw !BASE_ADDR								; spc destination
 
 SMPL_TABL_00_start:
 
-	%SMPL_PTR(SMPL_00, $0C0F)				; 
-	%SMPL_PTR(SMPL_01, $0F8A)				; 
-	%SMPL_PTR(SMPL_02, $0DFE)				; 
-	%SMPL_PTR(SMPL_03, $2316)				; 
-	%SMPL_PTR(SMPL_04, $12AB)				; 
-	%SMPL_PTR(SMPL_04, $12AB)				; 
-	%SMPL_PTR(SMPL_04, $12AB)				; 
-	%SMPL_PTR(SMPL_05, $0A7A)				; 
-	%SMPL_PTR(SMPL_06, $00B4)				; 
-	%SMPL_PTR(SMPL_07, $007E)				; 
-	%NULL_PTR()								; NULL
-	%NULL_PTR()								; NULL
+	%SMPL_PTR(SMPL_00, $0C0F)				; 00
+	%SMPL_PTR(SMPL_01, $0F8A)				; 01
+	%SMPL_PTR(SMPL_02, $0DFE)				; 02
+	%SMPL_PTR(SMPL_03, $2316)				; 03
+	%SMPL_PTR(SMPL_04, $12AB)				; 04
+	%SMPL_PTR(SMPL_04, $12AB)				; 05
+	%SMPL_PTR(SMPL_04, $12AB)				; 06
+	%SMPL_PTR(SMPL_05, $0A7A)				; 07
+	%SMPL_PTR(SMPL_06, $00B4)				; 08
+	%SMPL_PTR(SMPL_07, $007E)				; 09
+	%NULL_PTR()								; 0A NULL
+	%NULL_PTR()								; 0B NULL
 
 SMPL_TABL_00_end:
 ; ===========================================
@@ -62,10 +62,10 @@ dw !BASE_ADDR								; spc destination
 
 SMPL_TABL_01_start:
 
-	%SMPL_PTR(SMPL_08, $0522)				; 
-	%NULL_PTR()								; NULL
-	%NULL_PTR()								; NULL
-	%NULL_PTR()								; NULL
+	%SMPL_PTR(SMPL_08, $0522)				; 1C
+	%NULL_PTR()								; 1D NULL
+	%NULL_PTR()								; 1E NULL
+	%NULL_PTR()								; 1F NULL
 
 SMPL_TABL_01_end:
 ; ===========================================

@@ -22,7 +22,7 @@ SMPL_TABL_00_start:
 	%SMPL_PTR(SMPL_04, $06A5)				; 1D
 	%SMPL_PTR(SMPL_04, $06A5)				; 1E
 	%SMPL_PTR(SMPL_04, $06A5)				; 1F
-	%SMPL_PTR(SMPL_05, $0414)				; 20
+	%SMPL_PTR(SMPL_05, $0414)				; 20 Reserved for player's engine sound and will be overwritten at runtime
 	%SMPL_PTR(SMPL_05, $0414)				; 21
 	%SMPL_PTR(SMPL_05, $0414)				; 22
 	%SMPL_PTR(SMPL_05, $0414)				; 23

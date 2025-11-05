@@ -14,10 +14,10 @@ dw !BASE_ADDR								; spc destination
 
 SMPL_TABL_00_start:
 
-	%SMPL_PTR(SMPL_00, $1116)				; 
-	%SMPL_PTR(SMPL_01, $001B)				; 
-	%NULL_PTR()								; NULL
-	%NULL_PTR()								; NULL
+	%SMPL_PTR(SMPL_00, $1116)				; 2C
+	%SMPL_PTR(SMPL_01, $001B)				; 2D
+	%NULL_PTR()								; 2E NULL
+	%NULL_PTR()								; 2F NULL
 
 SMPL_TABL_00_end:
 ; ===========================================
