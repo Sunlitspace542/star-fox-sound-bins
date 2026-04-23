@@ -1,5 +1,6 @@
 ; Asar 1.91
 norom
+arch spc700
 
 incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
@@ -8,12 +9,7 @@ org $0000
 
 ; ===========================================
 !BASE_ADDR = $3C60
-dw SMPL_TABL_00_end-SMPL_TABL_00_start		; calculate size in bytes
-dw !BASE_ADDR								; spc destination
-
-
-SMPL_TABL_00_start:
-
+spcblock !BASE_ADDR nspc
 	%SMPL_PTR(SMPL_00, $001B)				; 18
 	%SMPL_PTR(SMPL_01, $001B)				; 19
 	%SMPL_PTR(SMPL_02, $01D4)				; 1A
@@ -38,20 +34,14 @@ SMPL_TABL_00_start:
 	%SMPL_PTR(SMPL_16, $020A)				; 2D
 	%SMPL_PTR(SMPL_17, $0129)				; 2E
 	%NULL_PTR()								; NULL
-
-SMPL_TABL_00_end:
+endspcblock
 ; ===========================================
 
 
 
 ; ===========================================
 !BASE_ADDR = $B360
-dw SMPL_DATA_00_end-SMPL_DATA_00_start		; calculate size in bytes
-dw !BASE_ADDR								; spc destination
-
-
-SMPL_DATA_00_start:
-
+spcblock !BASE_ADDR nspc
 	%INC_SMPL(SMPL_00)						; Include SMPL_00.brr
 	%INC_SMPL(SMPL_01)						; Include SMPL_01.brr
 	%INC_SMPL(SMPL_02)						; Include SMPL_02.brr
@@ -70,19 +60,14 @@ SMPL_DATA_00_start:
 	%INC_SMPL(SMPL_15)						; Include SMPL_15.brr
 	%INC_SMPL(SMPL_16)						; Include SMPL_16.brr
 	%INC_SMPL(SMPL_17)						; Include SMPL_17.brr
-
-SMPL_DATA_00_end:
+endspcblock
 ; ===========================================
 
 
 
 ; ===========================================
 !BASE_ADDR = $3D00
-dw INST_PRMS_00_end-INST_PRMS_00_start		; calculate size in bytes
-dw !BASE_ADDR								; spc destination
-
-
-INST_PRMS_00_start:
+spcblock !BASE_ADDR nspc
 ;	VxSRCN, VxADSR1, VxADSR2, VxGAIN, pitch mult base, pitch mult fractional (256ths)
 	db $00, $FF, $E0, $B8, $03, $40	; $00
 	db $01, $FF, $E0, $B8, $03, $10	; $01
@@ -131,23 +116,15 @@ INST_PRMS_00_start:
 	db $2C, $FF, $E0, $B8, $03, $D0	; $2C
 	db $2D, $FF, $E0, $B8, $03, $00	; $2D
 	db $2E, $FF, $E0, $B8, $03, $00	; $2E
-
-INST_PRMS_00_end:
+endspcblock
 ; ===========================================
 
 
 
 ; ===========================================
 !BASE_ADDR = $F8FE
-dw SONG_DATA_00_end-SONG_DATA_00_start		; calculate size in bytes
-dw !BASE_ADDR								; spc destination
-
-
-SONG_DATA_00_start:
-
+spcblock !BASE_ADDR nspc
 	%INC_SONG(SONG_00)						; Include SONG_00.bin
-
-SONG_DATA_00_end:
 ; ===========================================
 
 
@@ -157,5 +134,4 @@ SONG_DATA_00_end:
 ; ============================
 ; end of data, start execution
 ; ============================
-dw $0000
-dw $0400									; start execution here
+endspcblock execute $400					; start execution here

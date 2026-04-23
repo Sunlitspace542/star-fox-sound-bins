@@ -1,5 +1,6 @@
 ; Asar 1.91
 norom
+arch spc700
 
 incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
@@ -8,33 +9,20 @@ org $0000
 
 ; ===========================================
 !BASE_ADDR = $FDC0
-dw SONG_TABL_00_end-SONG_TABL_00_start		; calculate size in bytes
-dw !BASE_ADDR								; spc destination
-
-
-SONG_TABL_00_start:
-
+spcblock !BASE_ADDR nspc
 	dw $0000								; NULL
 	dw SONG_00								; 
 	dw SONG_00								; 
 	dw SONG_00								; 
-
-SONG_TABL_00_end:
+endspcblock
 ; ===========================================
 
 
 
 ; ===========================================
 !BASE_ADDR = $EBE5
-dw SONG_DATA_00_end-SONG_DATA_00_start		; calculate size in bytes
-dw !BASE_ADDR								; spc destination
-
-
-SONG_DATA_00_start:
-
+spcblock !BASE_ADDR nspc
 	%INC_SONG(SONG_00)						; Include SONG_00.bin
-
-SONG_DATA_00_end:
 ; ===========================================
 
 
@@ -44,5 +32,4 @@ SONG_DATA_00_end:
 ; ============================
 ; end of data, start execution
 ; ============================
-dw $0000
-dw $0400									; start execution here
+endspcblock execute $400					; start execution here
