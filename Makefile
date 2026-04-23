@@ -61,7 +61,7 @@ setup:
 %.BIN:
 	@echo Assembling $@
 	@if exist build\$*.bin del build\$*.bin
-	@cd $* && ..\asar.exe --no-title-check $*.asm ..\build\$@
+	@cd $* && ..\asar.exe --no-title-check --symbols=nocash $*.asm ..\build\$@
 	@echo Assembled $@
 
 # Clean target
