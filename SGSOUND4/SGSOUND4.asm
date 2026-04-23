@@ -9,8 +9,8 @@ incsrc ../MACROS.inc	; Macros File
 ; ===========================================
 !BASE_ADDR = $3CB0
 spcblock !BASE_ADDR nspc
-	%SMPL_PTR(SMPL_00, $1116)				; 2C
-	%SMPL_PTR(SMPL_01, $001B)				; 2D
+	%SMPL_PTR(SMPL_00, $1116)				; 2C Splash
+	%SMPL_PTR(SMPL_01, $001B)				; 2D Engine
 	%NULL_PTR()								; 2E NULL
 	%NULL_PTR()								; 2F NULL
 endspcblock

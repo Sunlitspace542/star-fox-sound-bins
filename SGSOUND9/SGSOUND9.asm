@@ -21,7 +21,7 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $C720
 spcblock !BASE_ADDR nspc
-	%INC_SMPL(SMPL_00)						; Include SMPL_00.brr
+	%INC_SMPL(SMPL_00)						; "Let's Go!"
 endspcblock
 ; ===========================================
 
