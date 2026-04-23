@@ -1,11 +1,10 @@
-; Asar 1.91
+asar 1.91
 norom
+org $0000
 arch spc700
 
 incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
-
-org $0000
 
 ; ===========================================
 !BASE_ADDR = $FDCC
