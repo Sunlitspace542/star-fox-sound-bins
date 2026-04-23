@@ -10,9 +10,9 @@ incsrc ../MACROS.inc	; Macros File
 !BASE_ADDR = $FDC0
 spcblock !BASE_ADDR nspc
 	dw $0000								; NULL
-	dw SONG_00								; 
-	dw SONG_00								; 
-	dw SONG_00								; 
+	dw Macbeth_E600							; sub 2
+	dw Macbeth_E600							; sub 3
+	dw Macbeth_E600							; sub 4
 endspcblock
 ; ===========================================
 
@@ -21,7 +21,7 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $E600
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
+	%INC_SONG(Macbeth_E600)					; Macbeth
 ; ===========================================
 
 

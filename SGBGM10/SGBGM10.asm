@@ -9,8 +9,8 @@ incsrc ../MACROS.inc	; Macros File
 ; ===========================================
 !BASE_ADDR = $FDCC
 spcblock !BASE_ADDR nspc
-	dw SONG_02								; 
-	dw $0000								; NULL
+	dw Last_Boss_Clear_F98E					; sub 7
+	dw $0000								; sub 8 NULL filler (don't remove)
 endspcblock
 ; ===========================================
 
@@ -19,8 +19,8 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $FDE2
 spcblock !BASE_ADDR nspc
-	dw SONG_00								; 
-	dw SONG_01								; 
+	dw Entering_Dangerous_Territory_F2E5	; sub 18
+	dw Boss_Andross_F2F3					; sub 19
 endspcblock
 ; ===========================================
 
@@ -29,9 +29,9 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $F2E5
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
-	%INC_SONG(SONG_01)						; Include SONG_01.bin
-	%INC_SONG(SONG_02)						; Include SONG_02.bin
+	%INC_SONG(Entering_Dangerous_Territory_F2E5)	; Entering Dangerous Territory
+	%INC_SONG(Boss_Andross_F2F3)					; Boss Andross
+	%INC_SONG(Last_Boss_Clear_F98E)					; Last Boss Clear
 ; ===========================================
 
 

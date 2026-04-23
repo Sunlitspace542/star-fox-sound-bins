@@ -93,7 +93,7 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $F000
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
+	%INC_SONG(Title_Screen_F000)			; Title Screen
 endspcblock
 ; ===========================================
 
@@ -102,8 +102,8 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $FDE2
 spcblock !BASE_ADDR nspc
-	dw SONG_00								; 
-	dw SONG_00								; 
+	dw Title_Screen_F000					; 
+	dw Title_Screen_F000					; 
 ; ===========================================
 
 

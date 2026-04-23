@@ -9,8 +9,8 @@ incsrc ../MACROS.inc	; Macros File
 ; ===========================================
 !BASE_ADDR = $FDC8
 spcblock !BASE_ADDR nspc
-	dw SONG_00								; 
-	dw SONG_00								; 
+	dw Boss_Asteroid_EC20								; sub 4
+	dw Boss_Asteroid_EC20								; sub 5
 endspcblock
 ; ===========================================
 
@@ -19,7 +19,7 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $EC20
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
+	%INC_SONG(Boss_Asteroid_EC20)						; Asteroid Boss
 ; ===========================================
 
 

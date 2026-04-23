@@ -21,8 +21,8 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $D300
 spcblock !BASE_ADDR nspc
-	%INC_SMPL(SMPL_00)						; Include SMPL_00.brr
-	%INC_SMPL(SMPL_01)						; Include SMPL_01.brr
+	%INC_SMPL(SMPL_00)						; Splash
+	%INC_SMPL(SMPL_01)						; Engine
 ; ===========================================
 
 

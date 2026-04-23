@@ -9,8 +9,8 @@ incsrc ../MACROS.inc	; Macros File
 ; ===========================================
 !BASE_ADDR = $FDC8
 spcblock !BASE_ADDR nspc
-	dw SONG_00								; 
-	dw SONG_01								; 
+	dw Boss_Venom_Base_1_EAC8					; sub 5
+	dw Boss_Venom_Base_1_Extended_EAE8			; sub 6 (extended)
 endspcblock
 ; ===========================================
 
@@ -19,8 +19,8 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $EAC8
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
-	%INC_SONG(SONG_01)						; Include SONG_01.bin
+	%INC_SONG(Boss_Venom_Base_1_EAC8)			; Boss Venom Base 1
+	%INC_SONG(Boss_Venom_Base_1_Extended_EAE8)	; Boss Venom Base 1 (Extended)
 ; ===========================================
 
 

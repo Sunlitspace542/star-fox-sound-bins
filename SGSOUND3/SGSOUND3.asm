@@ -123,7 +123,8 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $F8FE
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
+	%INC_SONG(Fanfare_Band_F8FE)			; Fanfare (Band)
+	%INC_SONG(Player_Down_Band_FCCE)		; Player Down (Band)
 ; ===========================================
 
 

@@ -16,7 +16,7 @@ spcblock !BASE_ADDR nspc
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
-	dw SONG_00								; 
+	dw Game_Over_E600						; sub 12
 endspcblock
 ; ===========================================
 
@@ -25,7 +25,7 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $E600
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
+	%INC_SONG(Game_Over_E600)				; Game Over
 ; ===========================================
 
 

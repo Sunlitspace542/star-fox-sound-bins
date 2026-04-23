@@ -29,12 +29,12 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $4000
 spcblock !BASE_ADDR nspc
-	%INC_SMPL(SMPL_00)						; Include SMPL_00.brr
-	%INC_SMPL(SMPL_01)						; Include SMPL_01.brr
-	%INC_SMPL(SMPL_02)						; Include SMPL_02.brr
-	%INC_SMPL(SMPL_03)						; Include SMPL_03.brr
-	%INC_SMPL(SMPL_04)						; Include SMPL_04.brr
-	%INC_SMPL(SMPL_05)						; Include SMPL_05.brr
+	%INC_SMPL(SMPL_00)						; "Emergency!"
+	%INC_SMPL(SMPL_01)						; "Prepare for launch"
+	%INC_SMPL(SMPL_02)						; SCRAMBLE chatter
+	%INC_SMPL(SMPL_03)						; Crash
+	%INC_SMPL(SMPL_04)						; Alarm
+	%INC_SMPL(SMPL_05)						; "Incoming enemy fighters!"
 endspcblock
 ; ===========================================
 
@@ -62,8 +62,8 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $FDDE
 spcblock !BASE_ADDR nspc
-	dw SONG_00								; 
-	dw EXT_SONG_FCCE								; 
+	dw SCRAMBLE_F7AB						; 
+	dw EXT_SONG_FCCE						; sub 17 Player Down (Band)
 endspcblock
 ; ===========================================
 
@@ -72,7 +72,7 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $F7AB
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
+	%INC_SONG(SCRAMBLE_F7AB)				; SCRAMBLE
 ; ===========================================
 
 

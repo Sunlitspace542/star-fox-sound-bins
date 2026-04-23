@@ -9,16 +9,16 @@ incsrc ../MACROS.inc	; Macros File
 ; ===========================================
 !BASE_ADDR = $3C00
 spcblock !BASE_ADDR nspc
-	%SMPL_PTR(SMPL_00, $0C0F)				; 00
-	%SMPL_PTR(SMPL_01, $0F8A)				; 01
-	%SMPL_PTR(SMPL_02, $0DFE)				; 02
-	%SMPL_PTR(SMPL_03, $2316)				; 03
-	%SMPL_PTR(SMPL_04, $12AB)				; 04
-	%SMPL_PTR(SMPL_04, $12AB)				; 05
-	%SMPL_PTR(SMPL_04, $12AB)				; 06
-	%SMPL_PTR(SMPL_05, $0A7A)				; 07
-	%SMPL_PTR(SMPL_06, $00B4)				; 08
-	%SMPL_PTR(SMPL_07, $007E)				; 09
+	%SMPL_PTR(SMPL_00, $0C0F)				; 00 "Come in Corneria"
+	%SMPL_PTR(SMPL_01, $0F8A)				; 01 "This is Corneria"
+	%SMPL_PTR(SMPL_02, $0DFE)				; 02 "Pepper speaking"
+	%SMPL_PTR(SMPL_03, $2316)				; 03 "Congratulations on a job well done"
+	%SMPL_PTR(SMPL_04, $12AB)				; 04 "I'm heading back to Corneria"
+	%SMPL_PTR(SMPL_04, $12AB)				; 05 "I'm heading back to Corneria"
+	%SMPL_PTR(SMPL_04, $12AB)				; 06 "I'm heading back to Corneria"
+	%SMPL_PTR(SMPL_05, $0A7A)				; 07 crash
+	%SMPL_PTR(SMPL_06, $00B4)				; 08 wind instrument?
+	%SMPL_PTR(SMPL_07, $007E)				; 09 flute
 	%NULL_PTR()								; 0A NULL
 	%NULL_PTR()								; 0B NULL
 endspcblock
@@ -45,7 +45,7 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $3C70
 spcblock !BASE_ADDR nspc
-	%SMPL_PTR(SMPL_08, $0522)				; 1C
+	%SMPL_PTR(SMPL_08, $0522)				; 1C "Roger"
 	%NULL_PTR()								; 1D NULL
 	%NULL_PTR()								; 1E NULL
 	%NULL_PTR()								; 1F NULL
@@ -115,9 +115,9 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $FDC0
 spcblock !BASE_ADDR nspc
-	dw EXT_SONG_F4B5								; 
+	dw EXT_SONG_F4B5						; 
 	dw $0000								; NULL
-	dw SONG_00								; 
+	dw Game_Clear_Demonstration_E000		; 
 	dw $0000								; NULL
 endspcblock
 ; ===========================================
@@ -127,19 +127,19 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $FDCC
 spcblock !BASE_ADDR nspc
-	dw EXT_SONG_F8D3								; 
+	dw EXT_SONG_F8D3						; sub 7 fanfare (orchestra) SGSOUND
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
-	dw EXT_SONG_F77F								; 
+	dw EXT_SONG_F77F						; sub 11 briefing SGSOUND2
 	dw $0000								; NULL
-	dw EXT_SONG_F829								; 
+	dw EXT_SONG_F829						; sub 13 briefing (fast) SGSOUND2
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
-	dw EXT_SONG_FCF0								; 
-	dw SONG_01								; 
-	dw SONG_01								; 
+	dw EXT_SONG_FCF0						; sub 17 player down (orchestra)
+	dw Ending_E772							; sub 18
+	dw Ending_E772							; sub 19
 endspcblock
 ; ===========================================
 
@@ -148,8 +148,8 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $E000
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
-	%INC_SONG(SONG_01)						; Include SONG_01.bin
+	%INC_SONG(Game_Clear_Demonstration_E000)	; Game Clear Demonstration
+	%INC_SONG(Ending_E772)						; Ending (Boss Roll)
 ; ===========================================
 
 

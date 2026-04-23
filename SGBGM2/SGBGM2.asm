@@ -9,9 +9,9 @@ incsrc ../MACROS.inc	; Macros File
 ; ===========================================
 !BASE_ADDR = $FDC8
 spcblock !BASE_ADDR nspc
-	dw SONG_00								; 
-	dw SONG_00								; 
-	dw EXT_SONG_F8FE								; 
+	dw Boss_Fortuna_E600					; sub 5
+	dw Boss_Fortuna_E600					; sub 6
+	dw EXT_SONG_F8FE						; sub 7 fanfare (band) SGSOUND3
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
@@ -21,7 +21,7 @@ spcblock !BASE_ADDR nspc
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
-	dw EXT_SONG_FCCE								; 
+	dw EXT_SONG_FCCE						; sub 17 player down (band) SGSOUND3
 endspcblock
 ; ===========================================
 
@@ -30,7 +30,7 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $E600
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
+	%INC_SONG(Boss_Fortuna_E600)			; Fortuna Boss
 ; ===========================================
 
 

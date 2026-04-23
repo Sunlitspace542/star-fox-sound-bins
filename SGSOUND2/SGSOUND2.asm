@@ -98,7 +98,12 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $F342
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
+	%INC_SONG(Black_Hole_Map_Select_F342)	; Black Hole Map Select
+	%INC_SONG(Course_Select_F4B5)			; Course Select
+	%INC_SONG(Briefing_F77F)				; Briefing
+	%INC_SONG(Briefing_Fast_F829)			; Briefing Fast
+	%INC_SONG(Fanfare_Orchestra_F8D3)		; Fanfare (Orchestra)
+	%INC_SONG(Player_Down_Orchestra_FCF0)	; Player Down (Orchestra)
 ; ===========================================
 
 

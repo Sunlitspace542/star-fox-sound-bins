@@ -58,7 +58,7 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $F000
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
+	%INC_SONG(Controls_F000)				; Controls Select
 endspcblock
 ; ===========================================
 
@@ -67,8 +67,8 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $FDE2
 spcblock !BASE_ADDR nspc
-	dw SONG_00								; 
-	dw SONG_00								; 
+	dw Controls_F000						; sub 18
+	dw Controls_F000						; sub 19
 ; ===========================================
 
 

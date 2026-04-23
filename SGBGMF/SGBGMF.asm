@@ -9,10 +9,10 @@ incsrc ../MACROS.inc	; Macros File
 ; ===========================================
 !BASE_ADDR = $FDC0
 spcblock !BASE_ADDR nspc
-	dw EXT_SONG_F4B5								; 
-	dw SONG_03								; 
-	dw SONG_00								; 
-	dw SONG_00								; 
+	dw EXT_SONG_F4B5						; sub 1	course select SGSOUND2
+	dw Secret_Activated_EB3A				; sub 2
+	dw Asteroid_Venom_Orbital_E000			; sub 3 Asteroid & Venom orbital
+	dw Asteroid_Venom_Orbital_E000			; sub 4 Asteroid & Venom orbital
 endspcblock
 ; ===========================================
 
@@ -21,17 +21,17 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $FDCC
 spcblock !BASE_ADDR nspc
-	dw EXT_SONG_F8D3								; 
-	dw SONG_02								; 
+	dw EXT_SONG_F8D3						; sub 7 fanfare (orchestra) SGSOUND2
+	dw Asteroid_Warp_Out_EAC3				; sub 8
 	dw $0000								; NULL
 	dw $0000								; NULL
-	dw EXT_SONG_F77F								; 
+	dw EXT_SONG_F77F						; 11 briefing SGSOUND2
 	dw $0000								; NULL
-	dw EXT_SONG_F829								; 
-	dw SONG_01								; 
+	dw EXT_SONG_F829						; sub 13 briefing (fast) SGSOUND2
+	dw Asteroid_Warp_EA06					; sub 14
 	dw $0000								; NULL
 	dw $0000								; NULL
-	dw EXT_SONG_FCF0								; 
+	dw EXT_SONG_FCF0						; sub 17 player down (orchestra)
 endspcblock
 ; ===========================================
 
@@ -40,10 +40,10 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $E000
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
-	%INC_SONG(SONG_01)						; Include SONG_01.bin
-	%INC_SONG(SONG_02)						; Include SONG_02.bin
-	%INC_SONG(SONG_03)						; Include SONG_03.bin
+	%INC_SONG(Asteroid_Venom_Orbital_E000)	; Asteroid / Venom Orbital
+	%INC_SONG(Asteroid_Warp_EA06)			; Asteroid Warp
+	%INC_SONG(Asteroid_Warp_Out_EAC3)		; Asteroid Warp Out
+	%INC_SONG(Secret_Activated_EB3A)		; Secret Activated
 ; ===========================================
 
 

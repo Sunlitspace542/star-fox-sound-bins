@@ -9,10 +9,10 @@ incsrc ../MACROS.inc	; Macros File
 ; ===========================================
 !BASE_ADDR = $FDC0
 spcblock !BASE_ADDR nspc
-	dw EXT_SONG_F4B5								; 
-	dw SONG_00								; 
-	dw SONG_00								; 
-	dw SONG_00								; 
+	dw EXT_SONG_F4B5						; 
+	dw Sector_Y_E000						; 
+	dw Sector_Y_E000						; 
+	dw Sector_Y_E000						; 
 endspcblock
 ; ===========================================
 
@@ -21,17 +21,17 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $FDCC
 spcblock !BASE_ADDR nspc
-	dw EXT_SONG_F8D3								; 
+	dw EXT_SONG_F8D3						; sub 7 fanfare (orchestra) SGSOUND2
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
-	dw EXT_SONG_F77F								; 
+	dw EXT_SONG_F77F						; sub 11 briefing SGSOUND2
 	dw $0000								; NULL
-	dw EXT_SONG_F829								; 
+	dw EXT_SONG_F829						; sub 13 briefing (fast) SGSOUND2
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
-	dw EXT_SONG_FCF0								; 
+	dw EXT_SONG_FCF0						; sub 17 player down (orchestra)
 endspcblock
 ; ===========================================
 
@@ -40,7 +40,7 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $E000
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
+	%INC_SONG(Sector_Y_E000)				; Sector Y
 ; ===========================================
 
 

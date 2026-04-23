@@ -9,7 +9,7 @@ incsrc ../MACROS.inc	; Macros File
 ; ===========================================
 !BASE_ADDR = $3CA0
 spcblock !BASE_ADDR nspc
-	%SMPL_PTR(SMPL_00, $0EF1)				; 28 "good luck"
+	%SMPL_PTR(SMPL_00, $0EF1)				; 28 "Good luck!"
 	%NULL_PTR()								; 29 NULL
 	%NULL_PTR()								; 2A NULL
 	%NULL_PTR()								; 2B NULL

@@ -9,7 +9,7 @@ incsrc ../MACROS.inc	; Macros File
 ; ===========================================
 !BASE_ADDR = $3C70
 spcblock !BASE_ADDR nspc
-	%SMPL_PTR(SMPL_00, $0F27)				; 1C
+	%SMPL_PTR(SMPL_00, $0F27)				; 1C "Let's Go!"
 	%NULL_PTR()								; 1D NULL
 	%NULL_PTR()								; 1E NULL
 	%NULL_PTR()								; 1F NULL
@@ -86,7 +86,7 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $E000
 spcblock !BASE_ADDR nspc
-	%INC_SONG(SONG_00)						; Include SONG_00.bin
+	%INC_SONG(Continue_E000)				; Continue
 endspcblock
 ; ===========================================
 
@@ -104,7 +104,7 @@ spcblock !BASE_ADDR nspc
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
-	dw SONG_00								; 
+	dw Continue_E000						; sub 10
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
