@@ -96,7 +96,7 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $FDC0
 spcblock !BASE_ADDR nspc
-	dw Course_Select_F4B5					; sub 1 course select SGSOUND2
+	dw EXT_SONG_F4B5						; sub 1 course select SGSOUND2
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
@@ -108,17 +108,17 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $FDCC
 spcblock !BASE_ADDR nspc
-	dw Fanfare_Orchestra_FD83				; sub 7 fanfare (orchestra) SGSOUND2
+	dw EXT_SONG_F8D3						; sub 7 fanfare (orchestra) SGSOUND2
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
-	dw Briefing_F77F						; sub 11 briefing SGSOUND2
+	dw EXT_SONG_F77F						; sub 11 briefing SGSOUND2
 	dw $0000								; NULL
-	dw Briefing_Fast_F829					; sub 13 briefing (Fast) SGSOUND2
+	dw EXT_SONG_F829						; sub 13 briefing (Fast) SGSOUND2
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
-	dw Player_Down_Orchestra_FCF0			; sub 17 player down (orchestra) SGSOUND2
+	dw EXT_SONG_FCF0						; sub 17 player down (orchestra) SGSOUND2
 	dw Main_Theme_E000						; sub 18
 	dw Main_Theme_E000						; sub 19
 endspcblock
@@ -130,11 +130,6 @@ endspcblock
 !BASE_ADDR = $E000
 spcblock !BASE_ADDR nspc
 	%INC_SONG(Main_Theme_E000)				; Main Theme
-	%INC_SONG(Course_Select_F4B5)			; Course Select
-	%INC_SONG(Briefing_F77F)				; Briefing
-	%INC_SONG(Briefing_Fast_F829)			; Briefing (Fast)
-	%INC_SONG(Fanfare_Orchestra_FD83)		; Fanfare (Orchestra)
-	%INC_SONG(Player_Down_Orchestra_FCF0)	; Player Down (Orchestra)
 ; ===========================================
 
 
