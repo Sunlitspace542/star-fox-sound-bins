@@ -27,7 +27,7 @@ spcblock !BASE_ADDR nspc
 	dw $0000								; NULL
 	dw EXT_SONG_F77F						; sub 11 briefing SGSOUND2
 	dw $0000								; NULL
-	dw EXT_SONG_F829						; briefing (fast) SGSOUND2
+	dw EXT_SONG_F829						; sub 13 briefing (fast) SGSOUND2
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL

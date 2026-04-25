@@ -104,11 +104,28 @@ spcblock !BASE_ADDR nspc
 	%INC_SONG(Briefing_Fast_F829)			; Briefing (Fast)
 	%INC_SONG(Fanfare_Orchestra_F8D3)		; Fanfare (Orchestra)
 	%INC_SONG(Player_Down_Orchestra_FCF0)	; Player Down (Orchestra)
+;endspcblock
+;!BASE_ADDR = $FDC0							; uncomment these lines if expanding
+;spcblock !BASE_ADDR nspc
+	dw Course_Select_F4B5					; sub 1 course select SGSOUND2
+	dw $0000								; NULL
+	dw $0000								; NULL
+	dw $0000								; NULL
+	dw $0000								; NULL
+	dw $0000								; NULL
+	dw Fanfare_Orchestra_F8D3				; sub 7 fanfare (orchestra) SGSOUND2
+	dw $0000								; NULL
+	dw $0000								; NULL
+	dw $0000								; NULL
+	dw Briefing_F77F						; sub 11 briefing SGSOUND2
+	dw $0000								; NULL
+	dw Briefing_Fast_F829					; sub 13 briefing (fast) SGSOUND2
+	dw $0000								; NULL
+	dw Black_Hole_Map_Select_F342			; sub 15 black hole map select SGSOUND2
+	dw $0000								; NULL
+	dw Player_Down_Orchestra_FCF0			; sub 17 player down (orchestra)
+
 ; ===========================================
-
-
-
-
 
 ; ============================
 ; end of data, start execution
