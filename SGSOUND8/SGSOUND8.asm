@@ -115,9 +115,9 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $FDC0
 spcblock !BASE_ADDR nspc
-	dw EXT_SONG_F4B5						; 
+	dw EXT_SONG_Course_Select_F4B5			; sub 1 course select SGSOUND2
 	dw $0000								; NULL
-	dw Game_Clear_Demonstration_E000		; 
+	dw Game_Clear_Demonstration_E000		; sub 3
 	dw $0000								; NULL
 endspcblock
 ; ===========================================
@@ -127,17 +127,17 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $FDCC
 spcblock !BASE_ADDR nspc
-	dw EXT_SONG_F8D3						; sub 7 fanfare (orchestra) SGSOUND
+	dw EXT_SONG_Fanfare_Orchestra_F8D3		; sub 7 fanfare (orchestra) SGSOUND2
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
-	dw EXT_SONG_F77F						; sub 11 briefing SGSOUND2
+	dw EXT_SONG_Briefing_F77F				; sub 11 briefing SGSOUND2
 	dw $0000								; NULL
-	dw EXT_SONG_F829						; sub 13 briefing (fast) SGSOUND2
+	dw EXT_SONG_Briefing_Fast_F829			; sub 13 briefing (fast) SGSOUND2
 	dw $0000								; NULL
 	dw $0000								; NULL
 	dw $0000								; NULL
-	dw EXT_SONG_FCF0						; sub 17 player down (orchestra)
+	dw EXT_SONG_Player_Down_Orchestra_FCF0	; sub 17 player down (orchestra) SGSOUND2
 	dw Ending_E772							; sub 18
 	dw Ending_E772							; sub 19
 endspcblock

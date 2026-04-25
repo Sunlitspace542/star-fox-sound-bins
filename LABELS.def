@@ -1,9 +1,9 @@
 incsrc MACROS.inc
 
-%EXT_LABEL(EXT_SONG_F4B5, $F4B5)		; COMMON SONG Course Select
-%EXT_LABEL(EXT_SONG_F77F, $F77F)		; COMMON SONG Briefing
-%EXT_LABEL(EXT_SONG_F829, $F829)		; COMMON SONG Briefing Fast
-%EXT_LABEL(EXT_SONG_F8D3, $F8D3)		; COMMON SONG Fanfare (Orchestra)
-%EXT_LABEL(EXT_SONG_F8FE, $F8FE)		; COMMON SONG Fanfare (Band)
-%EXT_LABEL(EXT_SONG_FCCE, $FCCE)		; COMMON SONG Player Down (Band)
-%EXT_LABEL(EXT_SONG_FCF0, $FCF0)		; COMMON SONG Player Down (Orchestra)
+%EXT_LABEL(EXT_SONG_Course_Select_F4B5, $F4B5)		; COMMON SONG Course Select
+%EXT_LABEL(EXT_SONG_Briefing_F77F, $F77F)		; COMMON SONG Briefing
+%EXT_LABEL(EXT_SONG_Briefing_Fast_F829, $F829)		; COMMON SONG Briefing Fast
+%EXT_LABEL(EXT_SONG_Fanfare_Orchestra_F8D3, $F8D3)		; COMMON SONG Fanfare (Orchestra)
+%EXT_LABEL(EXT_SONG_Fanfare_Band_F8FE, $F8FE)		; COMMON SONG Fanfare (Band)
+%EXT_LABEL(EXT_SONG_Player_Down_Band_FCCE, $FCCE)		; COMMON SONG Player Down (Band)
+%EXT_LABEL(EXT_SONG_Player_Down_Orchestra_FCF0, $FCF0)		; COMMON SONG Player Down (Orchestra)

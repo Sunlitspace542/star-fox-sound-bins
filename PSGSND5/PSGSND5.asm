@@ -62,8 +62,8 @@ endspcblock
 ; ===========================================
 !BASE_ADDR = $FDDE
 spcblock !BASE_ADDR nspc
-	dw SCRAMBLE_F7AB						; 
-	dw EXT_SONG_FCCE						; sub 17 Player Down (Band)
+	dw SCRAMBLE_F7AB						; sub 16
+	dw EXT_SONG_Player_Down_Band_FCCE		; sub 17 Player Down (Band)
 endspcblock
 ; ===========================================
 
