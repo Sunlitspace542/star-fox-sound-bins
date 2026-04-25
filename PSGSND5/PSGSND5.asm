@@ -7,7 +7,7 @@ incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
 
 ; ===========================================
-!BASE_ADDR = $3C00
+!BASE_ADDR = !sampl_dir
 spcblock !BASE_ADDR nspc
 	%SMPL_PTR(SMPL_00, $1827)				; 00
 	%SMPL_PTR(SMPL_01, $243F)				; 01
@@ -27,7 +27,7 @@ endspcblock
 
 
 ; ===========================================
-!BASE_ADDR = $4000
+!BASE_ADDR = !sampl_data
 spcblock !BASE_ADDR nspc
 	%INC_SMPL(SMPL_00)						; "Emergency!"
 	%INC_SMPL(SMPL_01)						; "Prepare for launch"
@@ -41,7 +41,7 @@ endspcblock
 
 
 ; ===========================================
-!BASE_ADDR = $3D00
+!BASE_ADDR = !patch_tab
 spcblock !BASE_ADDR nspc
 ;	VxSRCN, VxADSR1, VxADSR2, VxGAIN, pitch mult base, pitch mult fractional (256ths)
 	db $00, $FF, $E0, $B8, $07, $A0	; $00
@@ -60,7 +60,7 @@ endspcblock
 
 
 ; ===========================================
-!BASE_ADDR = $FDDE
+!BASE_ADDR = !gft+$1E
 spcblock !BASE_ADDR nspc
 	dw SCRAMBLE_F7AB						; sub 16
 	dw EXT_SONG_Player_Down_Band_FCCE		; sub 17 Player Down (Band)

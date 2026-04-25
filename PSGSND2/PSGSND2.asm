@@ -7,7 +7,7 @@ incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
 
 ; ===========================================
-!BASE_ADDR = $3C60
+!BASE_ADDR = !sampl_dir+$60
 spcblock !BASE_ADDR nspc
 	%SMPL_PTR(SMPL_00, $001B)				; 18
 	%SMPL_PTR(SMPL_01, $001B)				; 19
@@ -31,7 +31,7 @@ endspcblock
 
 
 ; ===========================================
-!BASE_ADDR = $B360
+!BASE_ADDR = !sampl_data+$7360
 spcblock !BASE_ADDR nspc
 	%INC_SMPL(SMPL_00)						; Include SMPL_00.brr
 	%INC_SMPL(SMPL_01)						; Include SMPL_01.brr
@@ -47,7 +47,7 @@ endspcblock
 
 
 ; ===========================================
-!BASE_ADDR = $3D00
+!BASE_ADDR = !patch_tab
 spcblock !BASE_ADDR nspc
 ;	VxSRCN, VxADSR1, VxADSR2, VxGAIN, pitch mult base, pitch mult fractional (256ths)
 	db $00, $FF, $E0, $B8, $03, $40	; $00
@@ -105,7 +105,7 @@ spcblock !BASE_ADDR nspc
 	%INC_SONG(Fanfare_Orchestra_F8D3)		; Fanfare (Orchestra)
 	%INC_SONG(Player_Down_Orchestra_FCF0)	; Player Down (Orchestra)
 ;endspcblock
-;!BASE_ADDR = $FDC0							; uncomment these lines if expanding
+;!BASE_ADDR = !gft							; uncomment these lines if expanding
 ;spcblock !BASE_ADDR nspc
 	dw Course_Select_F4B5					; sub 1 course select SGSOUND2
 	dw $0000								; NULL

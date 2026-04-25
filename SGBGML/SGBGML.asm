@@ -7,7 +7,7 @@ incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
 
 ; ===========================================
-!BASE_ADDR = $FDC0
+!BASE_ADDR = !gft
 spcblock !BASE_ADDR nspc
 	dw EXT_SONG_Course_Select_F4B5			; sub 1 course select SGSOUND2
 	dw Black_Hole_E000						; sub 2
@@ -19,7 +19,7 @@ endspcblock
 
 
 ; ===========================================
-!BASE_ADDR = $FDCC
+!BASE_ADDR = !gft+$C
 spcblock !BASE_ADDR nspc
 	dw EXT_SONG_Fanfare_Orchestra_F8D3		; sub 7 fanfare (orchestra) SGSOUND2
 	dw $0000								; NULL

@@ -7,7 +7,7 @@ incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
 
 ; ===========================================
-!BASE_ADDR = $3CA0
+!BASE_ADDR = !sampl_dir+$A0
 spcblock !BASE_ADDR nspc
 	%SMPL_PTR(SMPL_00, $0EF1)				; 28 "Good luck!"
 	%NULL_PTR()								; 29 NULL
@@ -19,7 +19,7 @@ endspcblock
 
 
 ; ===========================================
-!BASE_ADDR = $DBA0
+!BASE_ADDR = !sampl_data+$9BA0
 spcblock !BASE_ADDR nspc
 	%INC_SMPL(SMPL_00)						; Include SMPL_00.brr
 ; ===========================================

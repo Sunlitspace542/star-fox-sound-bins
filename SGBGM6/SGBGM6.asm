@@ -7,7 +7,7 @@ incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
 
 ; ===========================================
-!BASE_ADDR = $FDC8
+!BASE_ADDR = !gft+$8
 spcblock !BASE_ADDR nspc
 	dw Entering_Dangerous_Territory_EC00			; sub 4
 	dw Boss_Space_Armada_EC0E						; sub 5

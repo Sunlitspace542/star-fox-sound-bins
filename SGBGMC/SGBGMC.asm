@@ -7,7 +7,7 @@ incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
 
 ; ===========================================
-!BASE_ADDR = $FDC0
+!BASE_ADDR = !gft
 spcblock !BASE_ADDR nspc
 	dw $0000								; NULL
 	dw Titania_ECBA							; sub 2

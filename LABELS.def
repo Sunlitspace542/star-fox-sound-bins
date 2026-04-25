@@ -1,5 +1,10 @@
 incsrc MACROS.inc
 
+!gft = $FDC0 ; Song table base address
+!sampl_dir = $3C00 ; Sample directory base address
+!patch_tab = $3D00 ; Patch table base address
+!sampl_data = $4000 ; Sample data base address
+
 %EXT_LABEL(EXT_SONG_Course_Select_F4B5, $F4B5)		; COMMON SONG Course Select
 %EXT_LABEL(EXT_SONG_Briefing_F77F, $F77F)		; COMMON SONG Briefing
 %EXT_LABEL(EXT_SONG_Briefing_Fast_F829, $F829)		; COMMON SONG Briefing Fast

@@ -7,7 +7,7 @@ incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
 
 ; ===========================================
-!BASE_ADDR = $FDCC
+!BASE_ADDR = !gft+$C
 spcblock !BASE_ADDR nspc
 	dw Last_Boss_Clear_F98E					; sub 7
 	dw $0000								; sub 8 NULL filler (don't remove)
@@ -17,7 +17,7 @@ endspcblock
 
 
 ; ===========================================
-!BASE_ADDR = $FDE2
+!BASE_ADDR = !gft+$22
 spcblock !BASE_ADDR nspc
 	dw Entering_Dangerous_Territory_F2E5	; sub 18
 	dw Boss_Andross_F2F3					; sub 19

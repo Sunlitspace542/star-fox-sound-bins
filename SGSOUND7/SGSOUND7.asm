@@ -7,7 +7,7 @@ incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
 
 ; ===========================================
-!BASE_ADDR = $3C00
+!BASE_ADDR = !sampl_dir
 spcblock !BASE_ADDR nspc
 	%SMPL_PTR(SMPL_00, $04D1)				; 00
 	%SMPL_PTR(SMPL_00, $04D1)				; 01
@@ -31,7 +31,7 @@ endspcblock
 
 
 ; ===========================================
-!BASE_ADDR = $4000
+!BASE_ADDR = !sampl_data
 spcblock !BASE_ADDR nspc
 	%INC_SMPL(SMPL_00)						; Include SMPL_00.brr
 	%INC_SMPL(SMPL_01)						; Include SMPL_01.brr
@@ -42,7 +42,7 @@ endspcblock
 
 
 ; ===========================================
-!BASE_ADDR = $3D00
+!BASE_ADDR = !patch_tab
 spcblock !BASE_ADDR nspc
 ;	VxSRCN, VxADSR1, VxADSR2, VxGAIN, pitch mult base, pitch mult fractional (256ths)
 	db $00, $FF, $E0, $B8, $03, $40	; $00
@@ -100,7 +100,7 @@ endspcblock
 
 
 ; ===========================================
-!BASE_ADDR = $FDE2
+!BASE_ADDR = !gft+$22
 spcblock !BASE_ADDR nspc
 	dw Title_Screen_F000					; 
 	dw Title_Screen_F000					; 

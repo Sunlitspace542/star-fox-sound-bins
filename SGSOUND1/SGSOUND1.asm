@@ -6,7 +6,7 @@ arch spc700
 incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
 ; ===========================================
-!BASE_ADDR = $3C00
+!BASE_ADDR = !sampl_dir
 spcblock !BASE_ADDR nspc
 	%SMPL_PTR(SMPL_00, $001B)				; 00
 	%SMPL_PTR(SMPL_01, $010E)				; 01
@@ -38,7 +38,7 @@ endspcblock
 
 
 ; ===========================================
-!BASE_ADDR = $4000
+!BASE_ADDR = !sampl_data
 spcblock !BASE_ADDR nspc
 	%INC_SMPL(SMPL_00)						; Include SMPL_00.brr
 	%INC_SMPL(SMPL_01)						; Include SMPL_01.brr

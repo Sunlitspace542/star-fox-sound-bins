@@ -7,7 +7,7 @@ incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
 
 ; ===========================================
-!BASE_ADDR = $3D00
+!BASE_ADDR = !patch_tab
 spcblock !BASE_ADDR nspc
 ;	VxSRCN, VxADSR1, VxADSR2, VxGAIN, pitch mult base, pitch mult fractional (256ths)
 	db $00, $FF, $E0, $B8, $03, $40	; $00
@@ -65,7 +65,7 @@ endspcblock
 
 
 ; ===========================================
-!BASE_ADDR = $FDE2
+!BASE_ADDR = !gft+$22
 spcblock !BASE_ADDR nspc
 	dw Title_Demonstration_E000				; sub 18
 	dw Title_Demonstration_E000				; sub 19

@@ -7,7 +7,7 @@ incsrc ../LABELS.def	; External Labels File
 incsrc ../MACROS.inc	; Macros File
 
 ; ===========================================
-!BASE_ADDR = $FDC8
+!BASE_ADDR = !gft+$8
 spcblock !BASE_ADDR nspc
 	dw Boss_Meteor_E600						; sub 5
 	dw Boss_Meteor_E600						; sub 6
