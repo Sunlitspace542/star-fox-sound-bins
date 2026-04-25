@@ -123,7 +123,7 @@ spcblock !BASE_ADDR nspc
 	dw $0000								; NULL
 	dw Black_Hole_Map_Select_F342			; sub 15 black hole map select SGSOUND2
 	dw $0000								; NULL
-	dw Player_Down_Orchestra_FCF0			; sub 17 player down (orchestra)
+	dw Player_Down_Orchestra_FCF0			; sub 17 player down (orchestra) SGSOUND2
 
 ; ===========================================
 
