@@ -8,26 +8,26 @@ incsrc ../MACROS.inc	; Macros File
 ; ===========================================
 !BASE_ADDR = !sampl_dir
 spcblock !BASE_ADDR nspc
-	%SMPL_PTR(SMPL_00, $001B)				; 00
-	%SMPL_PTR(SMPL_01, $010E)				; 01
-	%SMPL_PTR(SMPL_02, $0024)				; 02
-	%SMPL_PTR(SMPL_03, $0024)				; 03
+	%SMPL_PTR(SMPL_00, $001B)				; 00 ufo1/phaser
+	%SMPL_PTR(SMPL_01, $010E)				; 01 ufo2/bomb
+	%SMPL_PTR(SMPL_02, $0024)				; 02 space ambience/robot 
+	%SMPL_PTR(SMPL_03, $0024)				; 03 incoming enemy alarm
 	%SMPL_PTR(SMPL_04, $0561)				; 04 laser blast
 	%SMPL_PTR(SMPL_05, $05C4)				; 05 bomb
 	%SMPL_PTR(SMPL_06, $0BA3)				; 06 player's laser
-	%SMPL_PTR(SMPL_07, $0D92)				; 07 crash
-	%SMPL_PTR(SMPL_08, $05C4)				; 08
-	%SMPL_PTR(SMPL_09, $001B)				; 09
-	%SMPL_PTR(SMPL_10, $002D)				; 0A
-	%SMPL_PTR(SMPL_11, $001B)				; 0B
+	%SMPL_PTR(SMPL_07, $0D92)				; 07 big explosion
+	%SMPL_PTR(SMPL_08, $05C4)				; 08 tiny explosion
+	%SMPL_PTR(SMPL_09, $001B)				; 09 laser colliding with wall
+	%SMPL_PTR(SMPL_10, $002D)				; 0A tank moving
+	%SMPL_PTR(SMPL_11, $001B)				; 0B ufo3
 	%SMPL_PTR(SMPL_12, $0816)				; 0C "incoming enemy"
 	%SMPL_PTR(SMPL_13, $0213)				; 0D "wing"
 	%SMPL_PTR(SMPL_14, $07B3)				; 0E "damage"
 	%SMPL_PTR(SMPL_15, $0870)				; 0F "twin blasters"
 	%SMPL_PTR(SMPL_16, $039F)				; 10 "shield"
 	%SMPL_PTR(SMPL_17, $0024)				; 11 Andross laugh
-	%SMPL_PTR(SMPL_18, $05A9)				; 12
-	%SMPL_PTR(SMPL_19, $001B)				; 13
+	%SMPL_PTR(SMPL_18, $05A9)				; 12 "repaired"
+	%SMPL_PTR(SMPL_19, $001B)				; 13 ufo4
 	%SMPL_PTR(SMPL_20, $0360)				; 14 Crystal
 	%SMPL_PTR(SMPL_20, $0360)				; 15 Crystal
 	%SMPL_PTR(SMPL_20, $0360)				; 16 Crystal
